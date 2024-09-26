@@ -40,7 +40,7 @@ public function addTask(Request $request ){
 
 
 public function editTask($id){
-            $Task = Task::find($id); # serach tha record that has the same id that i sent it when deleting comma here mean =
+            $Task = Task::find($id); 
             return view('edit',['Task'=>$Task]);
             }
 
