@@ -19,16 +19,16 @@ class ToDoController extends Controller
         }
 
     public function readTask(Request $request){
-    $userid = $request->user()->id; // Get the current user ID
-    $tasks = Task::where('userId', $userid)->get(); // Fetch tasks for the specific user
-    return view('todo', ['Task' => $tasks]); // Pass the tasks to the view
+    $userid = $request->user()->id; // get current user id 
+    $tasks = Task::where('userId', $userid)->get(); 
+    return view('todo', ['Task' => $tasks]); 
 }
 
 
 
 
 public function addTask(Request $request ){
-    $userid = $request->user()->id; // get current user id 
+    $userid = $request->user()->id; 
     $Task = Task::create([
         'title' => $request->title,
         'description' => $request->description, 
