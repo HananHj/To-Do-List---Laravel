@@ -42,7 +42,7 @@
                 <td><input type="checkbox" /></td>
                 <td>{{$Task->title}}</td>
                 <td>{{$Task->description}}</td> 
-                <td> <a href = "{{route('deleteTask',['id'=>$Task['id']])}}"> <i class="fa fa-trash text-danger" aria-hidden="true"></i> </a> </td>  <!-- الباراميتر هو الاي دي اللي من الرو يعني شيل معاك الاي دي اللي يضغط عليها المتسخدم -->
+                <td> <a href = "{{route('deleteTask',['id'=>$Task['id']])}}"> <i class="fa fa-trash text-danger" aria-hidden="true"></i> </a> </td> 
                 <td><a href="{{route('editTask',['id'=>$Task['id']])}}"><i class="fa fa-edit text-success" aria-hidden="true"></i></a></td>
               </tr>
               @endforeach
